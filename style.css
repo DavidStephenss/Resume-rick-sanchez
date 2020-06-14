@@ -1,0 +1,112 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "resume-title  resume-title resume-title resume-title resume-title resume-title"
+    "profile profile profile-pic profile-pic reach-me reach-me"
+    "education education skills skills expertise expertise"
+    "experience experience experience experience experience experience"
+    "internship internship internship accountant accountant accountant";
+ }
+        
+        
+
+body {
+    margin: auto;
+    height: 100vh;
+    width: 80vw;
+    border: 5px black; 
+}
+
+.resume-title { 
+    background-color: white;
+    grid-area: resume-title;
+    text-align: center;
+    border-style: solid;
+    border-width: 60px;
+    border-color: lightblue;
+
+    
+}
+
+.resume-name {
+    grid-column: 2/5;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resume-job {
+    grid-row: 3/4;
+    grid-column:2/5;
+    font-size: 30px;
+    text-align: center;
+}
+
+.profile { 
+    grid-area: profile;
+    text-align: center;
+}
+
+
+
+#profile-pic {
+    grid-area: profile-pic;
+    height: auto;
+    width: 50%;
+    border-radius: 30px;
+    display: auto;
+    margin: auto;
+}
+
+.reach-me {
+ grid-area: reach-me;
+ text-align: center;
+}
+
+.education {
+    grid-area: education;
+    text-align: center;
+}
+
+.skills {
+    grid-area: skills;
+    background-color: lightblue;
+    grid-column: 3/4;
+    text-align: center;
+  }
+
+.expertise {
+    grid-area: expertise;
+  }
+
+.experience {
+    grid-area: experience;
+    grid-column: 3/4;
+    background: grey;
+    text-align: center;
+  }
+
+.internship {
+    grid-area: internship;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+.accountant {
+    grid-area: accountant;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+.art {
+    border-style: solid;
+}
+.expertise-ex {
+    background-color: grey;
+    text-align: center;
+}
+.education-slide {
+    background:grey;
+    text-align: center;
+}
+
